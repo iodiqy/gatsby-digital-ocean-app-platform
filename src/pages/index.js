@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
+import whaleGIF from "../gifs/whales.gif"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
@@ -72,6 +73,11 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
+    <h1>Adopt a whale today</h1>
+    <p>Whales are our friends.</p>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+        <img src={whaleGIF} alt="Picture of Whale from BBC America" />
+    </div>
     <div className={styles.textCenter}>
       <StaticImage
         src="../images/example.png"
